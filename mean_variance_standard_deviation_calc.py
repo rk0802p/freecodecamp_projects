@@ -1,7 +1,9 @@
 import numpy as np
+from numpy import random
 
-def calculate(list):
-  list1 = np.reshape(list,(3,3))
+
+def calculate(listt):
+  list1 = np.reshape(listt,(3,3))
 
   mean1 = np.mean(list1, axis=0) 
   mean2=np.mean(list1,axis=0) 
@@ -37,3 +39,6 @@ def calculate(list):
   }
 
   return calculations
+
+l = np.array([1,11,21,31,41,51,61,71,81])
+print(calculate(l))
